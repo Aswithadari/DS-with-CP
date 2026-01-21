@@ -37,4 +37,21 @@ public class Task2 {
     for(int i=0;i<array.length-1;i++){
         System.out.print(array[i]+" ");
     }
+
+    //append element at the end of the array
+    System.out.println("Enter the element to be appended at the end");
+    int a=scanner.nextInt();
+    array[array.length-1]=a;
+    System.out.println("Array after appending element at the end:");
+    for(int i=0;i<array.length;i++){
+        System.out.print(array[i]+" ");
+    }
+
+    //pop element from the end of the array
+    System.out.println("Popping element from the end:");
+    array[array.length-1]=0;
+    System.out.println("Array after popping element from the end:");
+    for(int i=0;i<array.length;i++){
+        System.out.print(array[i]+" ");
+    }   
 }}
